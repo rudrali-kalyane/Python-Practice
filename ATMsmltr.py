@@ -16,10 +16,16 @@ while c!=4:
     
     
     if c == 1 :
+        try :
 
-        user = input("Enter username : ")
-        user = user.capitalize()
-        print("Total Balance :",balance[user])
+            user = input("Enter username : ")
+            if user not in (balance.keys()):
+                raise Exception("Sorry, no such username")
+
+            user = user.capitalize()
+            print("Total Balance :",balance[user])
+        except :
+            print("Enter valid username")
 
     elif c == 2:
 

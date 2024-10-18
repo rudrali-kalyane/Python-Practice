@@ -22,6 +22,8 @@ while c!=5:
         age = int(input("Enter new age : "))
         marks = int(input("Enter new marks : "))
 
+        
+
         student_data[key]["age"]=age
         student_data[key]["marks"]=marks
         print("\n")
